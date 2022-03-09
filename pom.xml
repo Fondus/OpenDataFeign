@@ -3,7 +3,6 @@
 		 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 		 xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
@@ -11,17 +10,16 @@
 		<relativePath />
 	</parent>
 
-	<groupId>org.vipcube.spring.openfeign</groupId>
+	<groupId>org.vipcube.openfeign</groupId>
 	<artifactId>opendata-feign</artifactId>
 	<version>1.0.0-SNAPSHOT</version>
 	<packaging>pom</packaging>
 
-	<name>The FondUS Spring Boot Project</name>
-	<url>https://github.com/Fondus/FondUS-Spring-Boot</url>
-	<inceptionYear>2019</inceptionYear>
+	<name>The Taiwan's OpenData OpenFeign Project</name>
+	<inceptionYear>2022</inceptionYear>
 
 	<description>
-		The FondUS Spring Boot Project is a set of auto configurations and starter with FondUS spring SDK.
+		This project provides Taiwan's OpenData OpenFeign integrations for Spring Boot apps through autoconfiguration and binding to the Spring Environment.
 	</description>
 
 	<developers>
@@ -94,4 +92,8 @@
 			</plugin>
 		</plugins>
 	</build>
+
+	<modules>
+		<module>OpenDataFeign-WRA-FHY</module>
+	</modules>
 </project>
