@@ -12,4 +12,10 @@
 	<artifactId>opendata-feign-wra-fhy</artifactId>
 	<packaging>jar</packaging>
 
+	<name>The Taiwan's WRA FHY OpenData OpenFeign Module</name>
+	<url>https://fhy.wra.gov.tw/WraApi</url>
+
+	<description>
+		This OpenFeign module provide Taiwan WRA-FHY opendata api integrations for Spring Boot.
+	</description>
 </project>

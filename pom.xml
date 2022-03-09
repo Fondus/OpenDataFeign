@@ -19,7 +19,7 @@
 	<inceptionYear>2022</inceptionYear>
 
 	<description>
-		This project provides Taiwan's OpenData OpenFeign integrations for Spring Boot apps through autoconfiguration and binding to the Spring Environment.
+		This project provides Taiwan's OpenData OpenFeign integrations for Spring Boot apps through autoconfiguration.
 	</description>
 
 	<developers>
