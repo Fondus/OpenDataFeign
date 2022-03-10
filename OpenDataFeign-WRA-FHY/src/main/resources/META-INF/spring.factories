@@ -1,2 +1,2 @@
 org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
-org.vipcube.openfeign.wra.fhy.autoconfigure.WraFhyFeignAutoConfiguration
+tw.fondus.openfeign.wra.fhy.autoconfigure.WraFhyFeignAutoConfiguration

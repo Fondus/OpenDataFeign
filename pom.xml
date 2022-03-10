@@ -10,7 +10,7 @@
 		<relativePath />
 	</parent>
 
-	<groupId>org.vipcube.openfeign</groupId>
+	<groupId>tw.fondus.openfeign</groupId>
 	<artifactId>opendata-feign</artifactId>
 	<version>1.0.0</version>
 	<packaging>pom</packaging>
