@@ -100,5 +100,6 @@
 
 	<modules>
 		<module>OpenDataFeign-WRA-FHY</module>
+		<module>OpenDataFeign-CWB-Weather</module>
 	</modules>
 </project>
