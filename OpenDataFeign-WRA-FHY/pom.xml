@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+		 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		 xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<parent>
+		<artifactId>opendata-feign</artifactId>
+		<groupId>org.vipcube.openfeign</groupId>
+		<version>1.0.0</version>
+	</parent>
+	<modelVersion>4.0.0</modelVersion>
+
+	<artifactId>opendata-feign-wra-fhy</artifactId>
+	<version>1.0.0</version>
+	<packaging>jar</packaging>
+
+	<name>The Taiwan's WRA FHY OpenData OpenFeign Module</name>
+	<url>https://fhy.wra.gov.tw/WraApi</url>
+
+	<description>
+		This OpenFeign module provide Taiwan WRA-FHY opendata api integrations for Spring Boot.
+	</description>
+</project>

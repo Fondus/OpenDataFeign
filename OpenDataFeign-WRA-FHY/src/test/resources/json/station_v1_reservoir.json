@@ -1,0 +1,16 @@
+{
+  "CityCode": "68",
+  "EffectiveCapacity": 19740.5,
+  "FullWaterHeight": 245,
+  "DeadWaterHeight": 195,
+  "Latitude": 24.810805555555557,
+  "Longitude": 121.24469444444445,
+  "Storage": 30912,
+  "ProtectionFlood": 1,
+  "HydraulicConstruction": 1,
+  "Importance": 1,
+  "StationNo": "10201",
+  "StationName": "石門水庫",
+  "BasinNo": "1140",
+  "BasinName": "淡水河"
+}
