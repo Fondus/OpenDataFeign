@@ -25,16 +25,16 @@ public class Location {
 	private String lon;
 	
 	@JsonProperty( "locationName" )
-	private String name;
+	private String locationName;
 	
 	@JsonProperty( "stationId" )
-	private String id;
+	private String stationId;
 	
 	@JsonProperty( "time" )
 	private Time time;
 	
 	@JsonProperty( "weatherElement" )
-	private List<Attribute> attributes;
+	private List<WeatherElement> weatherElements;
 	
 	@JsonProperty( "parameter" )
 	private List<Parameter> parameters;

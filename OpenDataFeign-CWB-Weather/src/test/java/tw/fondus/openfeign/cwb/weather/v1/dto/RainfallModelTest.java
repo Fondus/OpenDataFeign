@@ -44,14 +44,14 @@ public class RainfallModelTest {
 								DateTimeFormatter.ofPattern( "yyyy-MM-dd HH:mm:ss" ) ),
 						rainfall.getRecords().getLocations().get( 0 ).getTime().getValue().toLocalDateTime() ),
 				() -> Assertions.assertEquals( location.get( "stationId" ).textValue(),
-						rainfall.getRecords().getLocations().get( 0 ).getId() ),
+						rainfall.getRecords().getLocations().get( 0 ).getStationId() ),
 				() -> Assertions.assertEquals( location.get( "locationName" ).textValue(),
-						rainfall.getRecords().getLocations().get( 0 ).getName() ),
+						rainfall.getRecords().getLocations().get( 0 ).getLocationName() ),
 				() -> Assertions.assertEquals(
 						location.get( "weatherElement" ).get( 0 ).get( "elementName" ).textValue(),
-						rainfall.getRecords().getLocations().get( 0 ).getAttributes().get( 0 ).getName() ),
+						rainfall.getRecords().getLocations().get( 0 ).getWeatherElements().get( 0 ).getElementName() ),
 				() -> Assertions.assertEquals(
 						location.get( "weatherElement" ).get( 0 ).get( "elementValue" ).textValue(),
-						rainfall.getRecords().getLocations().get( 0 ).getAttributes().get( 0 ).getValue() ) );
+						rainfall.getRecords().getLocations().get( 0 ).getWeatherElements().get( 0 ).getElementValue() ) );
 	}
 }

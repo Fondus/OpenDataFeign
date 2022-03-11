@@ -7,7 +7,7 @@ import lombok.NoArgsConstructor;
 import lombok.experimental.SuperBuilder;
 
 /**
- * The JSON model of attribute.
+ * The JSON model of weather element.
  * 
  * @author Chao
  *
@@ -15,10 +15,10 @@ import lombok.experimental.SuperBuilder;
 @Data
 @SuperBuilder
 @NoArgsConstructor
-public class Attribute {
+public class WeatherElement {
 	@JsonProperty( "elementName" )
-	private String name;
+	private String elementName;
 	
 	@JsonProperty( "elementValue" )
-	private String value;
+	private String elementValue;
 }

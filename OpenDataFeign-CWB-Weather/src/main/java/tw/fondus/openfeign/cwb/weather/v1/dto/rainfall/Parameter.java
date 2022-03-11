@@ -17,8 +17,8 @@ import lombok.experimental.SuperBuilder;
 @NoArgsConstructor
 public class Parameter {
 	@JsonProperty( "parameterName" )
-	private String name;
+	private String parameterName;
 	
 	@JsonProperty( "parameterValue" )
-	private String value;
+	private String parameterValue;
 }
