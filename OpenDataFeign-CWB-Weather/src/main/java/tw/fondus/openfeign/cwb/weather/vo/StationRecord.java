@@ -26,7 +26,7 @@ public class StationRecord {
 	 * 
 	 * @return value
 	 */
-	public BigDecimal getValue() {
+	public BigDecimal getValueAsBigDecimal() {
 		return new BigDecimal( value );
 	}
 }
