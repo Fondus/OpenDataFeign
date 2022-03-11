@@ -7,7 +7,7 @@ import lombok.NoArgsConstructor;
 import lombok.experimental.SuperBuilder;
 
 /**
- * The JSON model of tide and buoy attribute.
+ * The JSON model of tide and buoy elements.
  * 
  * @author Chao
  *
@@ -15,7 +15,7 @@ import lombok.experimental.SuperBuilder;
 @Data
 @SuperBuilder
 @NoArgsConstructor
-public class Attributes {
+public class WeatherElements {
 	@JsonProperty( "tideHeight" )
 	private String tideHeight;
 
@@ -44,7 +44,7 @@ public class Attributes {
 	private String stationPressure;
 
 	@JsonProperty( "primaryAnemometer" )
-	private Wind wind;
+	private PrimaryAnemometer primaryAnemometer;
 
 	@JsonProperty( "seaCurrents" )
 	private SeaCurrents seaCurrents;

@@ -28,14 +28,14 @@ import lombok.experimental.SuperBuilder;
 @Data
 @SuperBuilder
 @NoArgsConstructor
-public class Observation {
+public class StationObsTime {
 	@JsonSerialize( using = TimeSerializer.class )
 	@JsonDeserialize( using = TimeDeserializer.class )
 	@JsonProperty( "dataTime" )
-	private OffsetDateTime time;
+	private OffsetDateTime dataTime;
 
 	@JsonProperty( "weatherElements" )
-	private Attributes attributes;
+	private WeatherElements weatherElements;
 	
 	private static class TimeSerializer extends JsonSerializer<OffsetDateTime> {
 		@Override

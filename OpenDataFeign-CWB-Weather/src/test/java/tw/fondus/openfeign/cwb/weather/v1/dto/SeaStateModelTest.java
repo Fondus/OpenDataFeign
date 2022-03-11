@@ -40,7 +40,7 @@ public class SeaStateModelTest {
 		JsonNode location = optLocation.get();
 		Assertions.assertAll( "BasicTypeCheck",
 				() -> Assertions.assertEquals( location.get( "station" ).get( "stationID" ).textValue(),
-						seaState.getRecords().getSeaSurfaceObs().getLocations().get( 0 ).getId().getValue() ),
+						seaState.getRecords().getSeaSurfaceObs().getLocations().get( 0 ).getStation().getStationID() ),
 				() -> Assertions.assertEquals(
 						OffsetDateTime.parse( location.get( "stationObsTimes" )
 								.get( "stationObsTime" )
@@ -51,10 +51,10 @@ public class SeaStateModelTest {
 								.getSeaSurfaceObs()
 								.getLocations()
 								.get( 0 )
-								.getObservations()
+								.getStationObsTimes()
 								.getList()
 								.get( 0 )
-								.getTime() ),
+								.getDataTime() ),
 				() -> Assertions.assertEquals(
 						location.get( "stationObsTimes" )
 								.get( "stationObsTime" )
@@ -66,10 +66,10 @@ public class SeaStateModelTest {
 								.getSeaSurfaceObs()
 								.getLocations()
 								.get( 0 )
-								.getObservations()
+								.getStationObsTimes()
 								.getList()
 								.get( 0 )
-								.getAttributes()
+								.getWeatherElements()
 								.getTideHeight() ),
 				() -> Assertions.assertEquals(
 						location.get( "stationObsTimes" )
@@ -82,10 +82,10 @@ public class SeaStateModelTest {
 								.getSeaSurfaceObs()
 								.getLocations()
 								.get( 0 )
-								.getObservations()
+								.getStationObsTimes()
 								.getList()
 								.get( 0 )
-								.getAttributes()
+								.getWeatherElements()
 								.getTideLevel() ) );
 	}
 }

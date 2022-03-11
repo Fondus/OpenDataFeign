@@ -17,7 +17,7 @@ import lombok.experimental.SuperBuilder;
 @NoArgsConstructor
 public class Layer {
 	@JsonProperty( "layerNumber" )
-	private String number;
+	private String layerNumber;
 
 	@JsonProperty( "currentDirection" )
 	private String currentDirection;

@@ -17,8 +17,8 @@ import lombok.experimental.SuperBuilder;
 @NoArgsConstructor
 public class Location {
 	@JsonProperty( "station" )
-	private Id id;
+	private Station station;
 
 	@JsonProperty( "stationObsTimes" )
-	private Observations observations;
+	private StationObsTimes stationObsTimes;
 }
