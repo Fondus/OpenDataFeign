@@ -34,7 +34,7 @@ public class Time {
 	@JsonSerialize( using = TimeSerializer.class )
 	@JsonDeserialize( using = TimeDeserializer.class )
 	@JsonProperty( "obsTime" )
-	private OffsetDateTime value;
+	private OffsetDateTime obsTime;
 	
 	private static class TimeSerializer extends JsonSerializer<OffsetDateTime> {
 		@Override

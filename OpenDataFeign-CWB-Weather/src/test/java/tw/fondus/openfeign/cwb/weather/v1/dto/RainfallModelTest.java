@@ -42,7 +42,7 @@ public class RainfallModelTest {
 				() -> Assertions.assertEquals(
 						LocalDateTime.parse( location.get( "time" ).get( "obsTime" ).textValue(),
 								DateTimeFormatter.ofPattern( "yyyy-MM-dd HH:mm:ss" ) ),
-						rainfall.getRecords().getLocations().get( 0 ).getTime().getValue().toLocalDateTime() ),
+						rainfall.getRecords().getLocations().get( 0 ).getTime().getObsTime().toLocalDateTime() ),
 				() -> Assertions.assertEquals( location.get( "stationId" ).textValue(),
 						rainfall.getRecords().getLocations().get( 0 ).getStationId() ),
 				() -> Assertions.assertEquals( location.get( "locationName" ).textValue(),
