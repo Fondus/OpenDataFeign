@@ -31,7 +31,7 @@ Feign client implements Taiwan's OpenData as below:
 
 This project are developed by：
 
-- @Vipcube
-- @JackChao1111
+- [@Vipcube](https://github.com/Vipcube)
+- [@JackChao1111](https://github.com/JackChao1111)
 
-And maintained by @Vipcupe
+And maintained by [@Vipcube](https://github.com/Vipcube)
