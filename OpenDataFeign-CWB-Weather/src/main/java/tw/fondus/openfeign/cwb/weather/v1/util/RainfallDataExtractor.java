@@ -31,20 +31,12 @@ public class RainfallDataExtractor {
 					.stream()
 					.filter( element -> element.getElementName().equals( rainfallType.getType() ) )
 					.findAny();
-
-			if ( optValue.isPresent() ) {
-				return StationRecord.builder()
-						.id( location.getStationId() )
-						.time( location.getTime().getObsTime() )
-						.value( new BigDecimal( optValue.get().getElementValue() ) )
-						.build();
-			} else {
-				return StationRecord.builder()
-						.id( location.getStationId() )
-						.time( location.getTime().getObsTime() )
-						.value( MISSING_VALUE )
-						.build();
-			}
+			return StationRecord.builder()
+					.id( location.getStationId() )
+					.time( location.getTime().getObsTime() )
+					.value( optValue.map( element -> new BigDecimal( element.getElementValue() ) )
+							.orElse( MISSING_VALUE ) )
+					.build();
 		} ).collect( Collectors.toList() );
 	}
 }
