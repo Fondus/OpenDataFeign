@@ -43,7 +43,7 @@ public class RainfallDataExtractorTest {
 						.filter( element -> element.getElementName().equals( RainfallType.HOUR01.getType() ) )
 						.findAny()
 						.get()
-						.getElementValue(), records.get( 0 ).getValue() ) );
+						.getElementValue(), records.get( 0 ).getValue().toString() ) );
 	}
 
 }

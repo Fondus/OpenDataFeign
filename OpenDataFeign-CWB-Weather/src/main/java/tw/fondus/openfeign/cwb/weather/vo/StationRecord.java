@@ -19,14 +19,5 @@ import lombok.experimental.SuperBuilder;
 public class StationRecord {
 	private String id;
 	private OffsetDateTime time;
-	private String value;
-	
-	/**
-	 * Get big decimal value.
-	 * 
-	 * @return value
-	 */
-	public BigDecimal getValueAsBigDecimal() {
-		return new BigDecimal( value );
-	}
+	private BigDecimal value;
 }

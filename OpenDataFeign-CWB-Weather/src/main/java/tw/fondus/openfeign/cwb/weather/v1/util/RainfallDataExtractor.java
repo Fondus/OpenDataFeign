@@ -1,5 +1,6 @@
 package tw.fondus.openfeign.cwb.weather.v1.util;
 
+import java.math.BigDecimal;
 import java.util.List;
 import java.util.Optional;
 import java.util.stream.Collectors;
@@ -15,7 +16,7 @@ import tw.fondus.openfeign.cwb.weather.vo.StationRecord;
  *
  */
 public class RainfallDataExtractor {
-	public static String MISSING_STRING = "-999.0";
+	public static BigDecimal MISSING_VALUE = new BigDecimal( "-999.0" );
 	
 	public static List<StationRecord> getRecords( Rainfall rainfall, RainfallType rainfallType ) {
 		return rainfall.getRecords().getLocations().stream().map( location -> {
@@ -28,13 +29,13 @@ public class RainfallDataExtractor {
 				return StationRecord.builder()
 						.id( location.getStationId() )
 						.time( location.getTime().getObsTime() )
-						.value( optValue.get().getElementValue() )
+						.value( new BigDecimal( optValue.get().getElementValue() ) )
 						.build();
 			} else {
 				return StationRecord.builder()
 						.id( location.getStationId() )
 						.time( location.getTime().getObsTime() )
-						.value( MISSING_STRING )
+						.value( MISSING_VALUE )
 						.build();
 			}
 		} ).collect( Collectors.toList() );
