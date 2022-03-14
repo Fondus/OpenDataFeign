@@ -1,6 +1,7 @@
 package tw.fondus.openfeign.cwb.weather.v1.util;
 
 import java.io.IOException;
+import java.math.BigDecimal;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.List;
@@ -35,7 +36,7 @@ public class RainfallDataExtractorTest {
 		List<StationRecord> records = RainfallDataExtractor.getRecords( rainfall, RainfallType.HOUR01 );
 		Assertions.assertAll( "Station record test",
 				() -> Assertions.assertEquals( rainfall.getRecords().getLocations().size(), records.size() ),
-				() -> Assertions.assertEquals( rainfall.getRecords()
+				() -> Assertions.assertEquals( new BigDecimal( rainfall.getRecords()
 						.getLocations()
 						.get( 0 )
 						.getWeatherElements()
@@ -43,7 +44,7 @@ public class RainfallDataExtractorTest {
 						.filter( element -> element.getElementName().equals( RainfallType.HOUR01.getType() ) )
 						.findAny()
 						.get()
-						.getElementValue(), records.get( 0 ).getValue().toString() ) );
+						.getElementValue() ), records.get( 0 ).getValue() ) );
 	}
 
 }
