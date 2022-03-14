@@ -26,6 +26,7 @@ Feign client implements Taiwan's OpenData as below:
 | Module         | API URL |
 |:--------------:|:-----:|
 | WRA-FHY OpenData | https://fhy.wra.gov.tw/WraApi |
+| CWB-Weather OpenData | https://opendata.cwb.gov.tw/index |
 
 ## Authors and Contributors
 
