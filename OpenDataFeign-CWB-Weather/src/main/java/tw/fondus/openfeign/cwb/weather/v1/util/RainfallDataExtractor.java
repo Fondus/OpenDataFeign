@@ -18,6 +18,13 @@ import tw.fondus.openfeign.cwb.weather.vo.StationRecord;
 public class RainfallDataExtractor {
 	public static BigDecimal MISSING_VALUE = new BigDecimal( "-999.0" );
 	
+	/**
+	 * Extract rainfall data to station record.
+	 * 
+	 * @param rainfall rainfall data
+	 * @param rainfallType extract rainfall value type
+	 * @return
+	 */
 	public static List<StationRecord> getRecords( Rainfall rainfall, RainfallType rainfallType ) {
 		return rainfall.getRecords().getLocations().stream().map( location -> {
 			Optional<WeatherElement> optValue = location.getWeatherElements()
