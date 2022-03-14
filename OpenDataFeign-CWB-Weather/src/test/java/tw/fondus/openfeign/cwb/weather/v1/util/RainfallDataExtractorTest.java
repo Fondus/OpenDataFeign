@@ -33,7 +33,7 @@ public class RainfallDataExtractorTest {
 		Rainfall rainfall = this.mapper.readValue( jsonString, Rainfall.class );
 
 		List<StationRecord> records = RainfallDataExtractor.getRecords( rainfall, RainfallType.HOUR01 );
-		Assertions.assertAll( "",
+		Assertions.assertAll( "Station record test",
 				() -> Assertions.assertEquals( rainfall.getRecords().getLocations().size(), records.size() ),
 				() -> Assertions.assertEquals( rainfall.getRecords()
 						.getLocations()

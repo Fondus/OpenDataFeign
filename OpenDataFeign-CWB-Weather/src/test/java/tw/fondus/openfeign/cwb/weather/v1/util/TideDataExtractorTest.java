@@ -33,7 +33,7 @@ public class TideDataExtractorTest {
 		SeaState seaState = this.mapper.readValue( jsonString, SeaState.class );
 
 		List<TideRecord> records = TideDataExtractor.getRecords( seaState );
-		Assertions.assertAll( "", () -> Assertions.assertEquals(
+		Assertions.assertAll( "Tide record test", () -> Assertions.assertEquals(
 				seaState.getRecords().getSeaSurfaceObs().getLocations().get( 0 ).getStationObsTimes().getList().size(),
 				records.size() ),
 				() -> Assertions.assertEquals( seaState.getRecords()

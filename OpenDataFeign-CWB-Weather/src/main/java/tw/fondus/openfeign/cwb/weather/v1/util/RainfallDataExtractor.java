@@ -23,7 +23,7 @@ public class RainfallDataExtractor {
 	 * 
 	 * @param rainfall rainfall data
 	 * @param rainfallType extract rainfall value type
-	 * @return
+	 * @return list of station record
 	 */
 	public static List<StationRecord> getRecords( Rainfall rainfall, RainfallType rainfallType ) {
 		return rainfall.getRecords().getLocations().stream().map( location -> {

@@ -21,7 +21,7 @@ public class TideDataExtractor {
 	 * Extract tide data to tide record with only id, time, value and level.
 	 * 
 	 * @param seaState sea state data
-	 * @return
+	 * @return list of tide record
 	 */
 	public static List<TideRecord> getRecords( SeaState seaState ) {
 		List<TideRecord> records = new ArrayList<>();
