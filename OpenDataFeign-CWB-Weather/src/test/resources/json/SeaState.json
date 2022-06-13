@@ -1,118 +1,118 @@
 {
-   "success":"true",
-   "result":{
-      "resource_id":"O-B0075-001",
-      "fields":[
+   "Success":"true",
+   "Result":{
+      "ResourceId":"O-B0075-001",
+      "Fields":[
          {
-            "id":"stationID",
-            "type":"String"
+            "Id":"StationID",
+            "Type":"String"
          },
          {
-            "id":"dataTime",
-            "type":"Timestamp"
+            "Id":"DataTime",
+            "Type":"Timestamp"
          },
          {
-            "id":"tideHeight",
-            "type":"String"
+            "Id":"TideHeight",
+            "Type":"String"
          },
          {
-            "id":"tideLevel",
-            "type":"String"
+            "Id":"TideLevel",
+            "Type":"String"
          },
          {
-            "id":"waveHeight",
-            "type":"String"
+            "Id":"WaveHeight",
+            "Type":"String"
          },
          {
-            "id":"waveDirection",
-            "type":"String"
+            "Id":"WaveDirection",
+            "Type":"String"
          },
          {
-            "id":"waveDirectionDescription",
-            "type":"String"
+            "Id":"WaveDirectionDescription",
+            "Type":"String"
          },
          {
-            "id":"wavePeriod",
-            "type":"String"
+            "Id":"WavePeriod",
+            "Type":"String"
          },
          {
-            "id":"seaTemperature",
-            "type":"String"
+            "Id":"SeaTemperature",
+            "Type":"String"
          },
          {
-            "id":"stationPressure",
-            "type":"String"
+            "Id":"StationPressure",
+            "Type":"String"
          },
          {
-            "id":"windSpeed",
-            "type":"String"
+            "Id":"WindSpeed",
+            "Type":"String"
          },
          {
-            "id":"windScale",
-            "type":"String"
+            "Id":"WindScale",
+            "Type":"String"
          },
          {
-            "id":"windDirection",
-            "type":"String"
+            "Id":"WindDirection",
+            "Type":"String"
          },
          {
-            "id":"windDirectionDescription",
-            "type":"String"
+            "Id":"WindDirectionDescription",
+            "Type":"String"
          },
          {
-            "id":"maximumWindSpeed",
-            "type":"String"
+            "Id":"MaximumWindSpeed",
+            "Type":"String"
          },
          {
-            "id":"maximumWindScale",
-            "type":"String"
+            "Id":"MaximumWindScale",
+            "Type":"String"
          },
          {
-            "id":"layerNumber",
-            "type":"Integer"
+            "Id":"LayerNumber",
+            "Type":"Integer"
          },
          {
-            "id":"currentDirection",
-            "type":"String"
+            "Id":"CurrentDirection",
+            "Type":"String"
          },
          {
-            "id":"currentDirectionDescription",
-            "type":"String"
+            "Id":"CurrentDirectionDescription",
+            "Type":"String"
          },
          {
-            "id":"currentSpeed",
-            "type":"String"
+            "Id":"CurrentSpeed",
+            "Type":"String"
          },
          {
-            "id":"currentSpeedInKnots",
-            "type":"String"
+            "Id":"CurrentSpeedInKnots",
+            "Type":"String"
          }
       ]
    },
-   "records":{
-      "seaSurfaceObs":{
-         "location":[
+   "Records":{
+      "SeaSurfaceObs":{
+         "Location":[
             {
-               "station":{
-                  "stationID":"1456"
+               "Station":{
+                  "StationID":"1456"
                },
-               "stationObsTimes":{
-                  "stationObsTime":[
+               "StationObsTimes":{
+                  "StationObsTime":[
                      {
-                        "dataTime":"2022-03-10T11:00:00+08:00",
-                        "weatherElements":{
-                           "tideHeight":"-0.20",
-                           "tideLevel":"漲潮",
-                           "seaTemperature":"None",
-                           "temperature":"None",
-                           "stationPressure":"None",
-                           "primaryAnemometer":{
-                              "windSpeed":"None",
-                              "windScale":"None",
-                              "windDirection":"None",
-                              "windDirectionDescription":"None",
-                              "maximumWindSpeed":"None",
-                              "maximumWindScale":"None"
+                        "DateTime":"2022-06-13T10:00:00+08:00",
+                        "WeatherElements":{
+                           "TideHeight":"2.01",
+                           "TideLevel":"退潮",
+                           "SeaTemperature":"None",
+                           "Temperature":"None",
+                           "StationPressure":"None",
+                           "PrimaryAnemometer":{
+                              "WindSpeed":"None",
+                              "WindScale":"None",
+                              "WindDirection":"None",
+                              "WindDirectionDescription":"None",
+                              "MaximumWindSpeed":"None",
+                              "MaximumWindScale":"None"
                            }
                         }
                      }
