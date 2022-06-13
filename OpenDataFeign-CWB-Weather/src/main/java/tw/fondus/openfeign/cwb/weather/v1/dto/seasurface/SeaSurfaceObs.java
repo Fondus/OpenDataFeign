@@ -21,6 +21,6 @@ import lombok.experimental.SuperBuilder;
 @NoArgsConstructor
 public class SeaSurfaceObs {
 	@Builder.Default
-	@JsonProperty( "location" )
+	@JsonProperty( "Location" )
 	private List<Location> locations = new ArrayList<>();
 }

@@ -21,6 +21,6 @@ import lombok.experimental.SuperBuilder;
 @NoArgsConstructor
 public class SeaCurrents {
 	@Builder.Default
-	@JsonProperty( "layer" )
+	@JsonProperty( "Layer" )
 	private List<Layer> layers = new ArrayList();
 }

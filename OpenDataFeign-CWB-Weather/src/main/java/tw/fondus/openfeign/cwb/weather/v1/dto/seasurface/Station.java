@@ -16,6 +16,6 @@ import lombok.experimental.SuperBuilder;
 @SuperBuilder
 @NoArgsConstructor
 public class Station {
-	@JsonProperty( "stationID" )
+	@JsonProperty( "StationID" )
 	private String stationID;
 }
