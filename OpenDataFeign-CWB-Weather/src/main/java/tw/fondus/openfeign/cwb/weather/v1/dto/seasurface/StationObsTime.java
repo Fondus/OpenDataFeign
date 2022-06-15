@@ -31,10 +31,10 @@ import lombok.experimental.SuperBuilder;
 public class StationObsTime {
 	@JsonSerialize( using = TimeSerializer.class )
 	@JsonDeserialize( using = TimeDeserializer.class )
-	@JsonProperty( "dataTime" )
+	@JsonProperty( "DateTime" )
 	private OffsetDateTime dataTime;
 
-	@JsonProperty( "weatherElements" )
+	@JsonProperty( "WeatherElements" )
 	private WeatherElements weatherElements;
 	
 	private static class TimeSerializer extends JsonSerializer<OffsetDateTime> {

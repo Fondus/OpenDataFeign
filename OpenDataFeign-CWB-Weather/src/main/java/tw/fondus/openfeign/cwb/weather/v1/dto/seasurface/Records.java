@@ -16,6 +16,6 @@ import lombok.experimental.SuperBuilder;
 @SuperBuilder
 @NoArgsConstructor
 public class Records {
-	@JsonProperty( "seaSurfaceObs" )
+	@JsonProperty( "SeaSurfaceObs" )
 	private SeaSurfaceObs seaSurfaceObs;
 }

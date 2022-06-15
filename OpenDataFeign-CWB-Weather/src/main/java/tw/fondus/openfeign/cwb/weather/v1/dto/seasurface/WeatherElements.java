@@ -16,36 +16,36 @@ import lombok.experimental.SuperBuilder;
 @SuperBuilder
 @NoArgsConstructor
 public class WeatherElements {
-	@JsonProperty( "tideHeight" )
+	@JsonProperty( "TideHeight" )
 	private String tideHeight;
 
-	@JsonProperty( "tideLevel" )
+	@JsonProperty( "TideLevel" )
 	private String tideLevel;
 
-	@JsonProperty( "waveHeight" )
+	@JsonProperty( "WaveHeight" )
 	private String waveHeight;
 
-	@JsonProperty( "waveDirection" )
+	@JsonProperty( "WaveDirection" )
 	private String waveDirection;
 
-	@JsonProperty( "waveDirectionDescription" )
+	@JsonProperty( "WaveDirectionDescription" )
 	private String waveDirectionDescription;
 
-	@JsonProperty( "wavePeriod" )
+	@JsonProperty( "WavePeriod" )
 	private String wavePeriod;
 
-	@JsonProperty( "seaTemperature" )
+	@JsonProperty( "SeaTemperature" )
 	private String seaTemperature;
 
-	@JsonProperty( "temperature" )
+	@JsonProperty( "Temperature" )
 	private String temperature;
 
-	@JsonProperty( "stationPressure" )
+	@JsonProperty( "StationPressure" )
 	private String stationPressure;
 
-	@JsonProperty( "primaryAnemometer" )
+	@JsonProperty( "PrimaryAnemometer" )
 	private PrimaryAnemometer primaryAnemometer;
 
-	@JsonProperty( "seaCurrents" )
+	@JsonProperty( "SeaCurrents" )
 	private SeaCurrents seaCurrents;
 }

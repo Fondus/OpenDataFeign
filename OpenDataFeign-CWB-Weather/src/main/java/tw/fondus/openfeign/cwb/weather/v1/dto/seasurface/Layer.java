@@ -16,18 +16,18 @@ import lombok.experimental.SuperBuilder;
 @SuperBuilder
 @NoArgsConstructor
 public class Layer {
-	@JsonProperty( "layerNumber" )
+	@JsonProperty( "LayerNumber" )
 	private String layerNumber;
 
-	@JsonProperty( "currentDirection" )
+	@JsonProperty( "CurrentDirection" )
 	private String currentDirection;
 
-	@JsonProperty( "currentDirectionDescription" )
+	@JsonProperty( "CurrentDirectionDescription" )
 	private String currentDirectionDescription;
 
-	@JsonProperty( "currentSpeed" )
+	@JsonProperty( "CurrentSpeed" )
 	private String currentSpeed;
 
-	@JsonProperty( "currentSpeedInKnots" )
+	@JsonProperty( "CurrentSpeedInKnots" )
 	private String currentSpeedInKnots;
 }
