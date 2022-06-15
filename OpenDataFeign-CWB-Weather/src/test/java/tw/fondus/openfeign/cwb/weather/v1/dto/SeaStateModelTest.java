@@ -33,19 +33,19 @@ public class SeaStateModelTest {
 		String jsonString = Files.readString( Paths.get( "src/test/resources/json/SeaState.json" ) );
 		JsonNode jsonElement = this.mapper.readTree( jsonString );
 		Optional<JsonNode> optLocation = Optional
-				.ofNullable( jsonElement.get( "records" ).get( "seaSurfaceObs" ).get( "location" ).get( 0 ) );
+				.ofNullable( jsonElement.get( "Records" ).get( "SeaSurfaceObs" ).get( "Location" ).get( 0 ) );
 		Assertions.assertAll( "Location object check", () -> Assertions.assertTrue( optLocation.isPresent() ) );
 
 		SeaState seaState = this.mapper.readValue( jsonString, SeaState.class );
 		JsonNode location = optLocation.get();
 		Assertions.assertAll( "BasicTypeCheck",
-				() -> Assertions.assertEquals( location.get( "station" ).get( "stationID" ).textValue(),
+				() -> Assertions.assertEquals( location.get( "Station" ).get( "StationID" ).textValue(),
 						seaState.getRecords().getSeaSurfaceObs().getLocations().get( 0 ).getStation().getStationID() ),
 				() -> Assertions.assertEquals(
-						OffsetDateTime.parse( location.get( "stationObsTimes" )
-								.get( "stationObsTime" )
+						OffsetDateTime.parse( location.get( "StationObsTimes" )
+								.get( "StationObsTime" )
 								.get( 0 )
-								.get( "dataTime" )
+								.get( "DateTime" )
 								.textValue() ),
 						seaState.getRecords()
 								.getSeaSurfaceObs()
@@ -56,11 +56,11 @@ public class SeaStateModelTest {
 								.get( 0 )
 								.getDataTime() ),
 				() -> Assertions.assertEquals(
-						location.get( "stationObsTimes" )
-								.get( "stationObsTime" )
+						location.get( "StationObsTimes" )
+								.get( "StationObsTime" )
 								.get( 0 )
-								.get( "weatherElements" )
-								.get( "tideHeight" )
+								.get( "WeatherElements" )
+								.get( "TideHeight" )
 								.textValue(),
 						seaState.getRecords()
 								.getSeaSurfaceObs()
@@ -72,11 +72,11 @@ public class SeaStateModelTest {
 								.getWeatherElements()
 								.getTideHeight() ),
 				() -> Assertions.assertEquals(
-						location.get( "stationObsTimes" )
-								.get( "stationObsTime" )
+						location.get( "StationObsTimes" )
+								.get( "StationObsTime" )
 								.get( 0 )
-								.get( "weatherElements" )
-								.get( "tideLevel" )
+								.get( "WeatherElements" )
+								.get( "TideLevel" )
 								.textValue(),
 						seaState.getRecords()
 								.getSeaSurfaceObs()

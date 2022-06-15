@@ -21,6 +21,6 @@ import lombok.experimental.SuperBuilder;
 @NoArgsConstructor
 public class StationObsTimes {
 	@Builder.Default
-	@JsonProperty( "stationObsTime" )
+	@JsonProperty( "StationObsTime" )
 	private List<StationObsTime> list = new ArrayList();
 }

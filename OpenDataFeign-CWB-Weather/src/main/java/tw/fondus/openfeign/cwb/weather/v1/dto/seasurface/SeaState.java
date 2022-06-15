@@ -16,10 +16,10 @@ import lombok.experimental.SuperBuilder;
 @SuperBuilder
 @NoArgsConstructor
 public class SeaState {
-	@JsonProperty( "success" )
+	@JsonProperty( "Success" )
 	private String success;
 	
-	@JsonProperty( "records" )
+	@JsonProperty( "Records" )
 	private Records records;
 }
 

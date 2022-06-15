@@ -16,21 +16,21 @@ import lombok.experimental.SuperBuilder;
 @SuperBuilder
 @NoArgsConstructor
 public class PrimaryAnemometer {
-	@JsonProperty( "windSpeed" )
+	@JsonProperty( "WindSpeed" )
 	private String windSpeed;
 
-	@JsonProperty( "windScale" )
+	@JsonProperty( "WindScale" )
 	private String windScale;
 
-	@JsonProperty( "windDirection" )
+	@JsonProperty( "WindDirection" )
 	private String windDirection;
 
-	@JsonProperty( "windDirectionDescription" )
+	@JsonProperty( "WindDirectionDescription" )
 	private String windDirectionDescription;
 
-	@JsonProperty( "maximumWindSpeed" )
+	@JsonProperty( "MaximumWindSpeed" )
 	private String maximumWindSpeed;
 
-	@JsonProperty( "maximumWindScale" )
+	@JsonProperty( "MaximumWindScale" )
 	private String maximumWindScale;
 }
